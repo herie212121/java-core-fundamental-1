@@ -20,13 +20,18 @@ public class PetualanganChefJaya {
     
     
     public static void main(String[] args) {
-        
+      for (int x=1;x<20; x++){
+         
+      }
     }
     public void pergiKeSekolah (){
        mesinBerjalan();
        bahanBakar = 49;
        uang = 70000;
        air = 20;
+        System.out.println("sisa bahan bakar =" + bahanBakar);
+        System.out.println("sisa uang =" + uang);
+        System.out.println("sisa air" + air );
     }
     
     public void pergiKePasar (){
@@ -34,6 +39,9 @@ public class PetualanganChefJaya {
         bahanBakar = 20;
        uang = 60000;
        air = 15;
+       System.out.println("sisa bahan bakar =" + bahanBakar);
+        System.out.println("sisa uang =" + uang);
+        System.out.println("sisa air" + air );
     }
     
     public void pergiKeBengkelBan (){
@@ -41,6 +49,9 @@ public class PetualanganChefJaya {
         bahanBakar = 50;
        uang = 50000;
        air = 14;
+       System.out.println("sisa bahan bakar =" + bahanBakar);
+        System.out.println("sisa uang =" + uang);
+        System.out.println("sisa air" + air );
     }
     
     public void pergiKePomBensin (){
@@ -48,6 +59,9 @@ public class PetualanganChefJaya {
         bahanBakar = 45;
        uang = 30000;
        air = 13;
+       System.out.println("sisa bahan bakar =" + bahanBakar);
+        System.out.println("sisa uang =" + uang);
+        System.out.println("sisa air" + air );
     }
     
     public void pergiKePeternakan (){
@@ -55,6 +69,9 @@ public class PetualanganChefJaya {
         bahanBakar = 25;
        uang = 25000;
        air = 5;
+       System.out.println("sisa bahan bakar =" + bahanBakar);
+        System.out.println("sisa uang =" + uang);
+        System.out.println("sisa air" + air );
     }
     public void mesinBerjalan(){
      for (int x=1; x<8; x++) {
