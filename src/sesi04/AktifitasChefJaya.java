@@ -24,6 +24,13 @@ public class AktifitasChefJaya {
     double karcis = 0;
     double kas = 300000;
 
+    double tepung2 = 0;
+    double mentega2 = 0;
+    double ayam2 = 0;
+    double dada2 = 0;
+    double sendokGarpu2 = 0;
+    double panciBaru2 = 0;
+
     public static void main(String[] args) {
 
         AktifitasChefJaya latihan = new AktifitasChefJaya();
@@ -73,6 +80,13 @@ public class AktifitasChefJaya {
             panciBaru = 25000 - (25000 * 0.5);
             karcis = 5000;
 
+            tepung2 = 2000;
+            mentega2 = 5000;
+            ayam2 = 25000;
+            dada2 = 15000;
+            sendokGarpu2 = 50000;
+            panciBaru2 = 25000;
+
         } else {
             tepung = 2000;
             mentega = 5000;
@@ -86,11 +100,21 @@ public class AktifitasChefJaya {
     }
 
     public void listPembelian() {
-        
+
         System.out.println("Parkir Di Parkiran");
         melangkahKeToko();
         System.out.println("    Sampai ke Toko Kue");
+
         System.out.println("beli tepung 1/4, dan mentega 1/4 ");
+        if ("jumat".equals(namaHari) || "sabtu".equals(namaHari)) {
+
+            System.out.println("Harga sebelum diskon");
+            System.out.println("Harga Mentega 1/4 = Rp " + mentega2);
+            System.out.println("harga Tepung 1/4 = Rp " + tepung2);
+            System.out.println("");
+            System.out.println("Harga setelah diskon");
+        }
+
         System.out.println("Harga Mentega 1/4 = Rp " + mentega);
         System.out.println("harga Tepung 1/4 = Rp " + tepung);
         kas = kas - mentega - tepung;
@@ -98,6 +122,14 @@ public class AktifitasChefJaya {
         melangkahKeToko();
         System.out.println("    Sampai ke Toko Ayam");
         System.out.println("beli ayam 1Kg, dan dada 4 potong");
+        if ("jumat".equals(namaHari) || "sabtu".equals(namaHari)) {
+
+            System.out.println("Harga sebelum diskon");
+            System.out.println("Harga Ayam 1Kg =Rp " + ayam2);
+            System.out.println(" Harga dada 4 potong = Rp " + dada2);
+            System.out.println("");
+            System.out.println("Harga setelah diskon");
+        }
         System.out.println("Harga Ayam 1Kg =Rp " + ayam);
         System.out.println(" Harga dada 4 potong = Rp " + dada);
         kas = kas - ayam - dada;
@@ -114,8 +146,8 @@ public class AktifitasChefJaya {
         System.out.println("Menuju parkiran");
         melangkahKeToko();
         System.out.println("bayar parkir = Rp" + karcis);
-        kas = kas -karcis;
-         System.out.println("sisa Saldo = Rp " + kas);
+        kas = kas - karcis;
+        System.out.println("sisa Saldo = Rp " + kas);
 
     }
 
