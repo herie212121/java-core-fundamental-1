@@ -16,35 +16,34 @@ public class KasusBlender {
     String merek = "YAMAHA";
     int harga = 450000;
 
-    public void startLevel(int angka) {
+    public void  startLevel(int angka) {
         level = angka;
-        System.out.println("Mesin mulai hidup di level "+ level);
-        
-        
+        System.out.println("Mesin mulai hidup di level " + level);
+                        
+
     }
 
     public void stop() {
-level =0;
-        System.out.println("Mesin kini berhenti level " + level );
-        
-        
+        level = 0;
+        System.out.println("Mesin kini berhenti level " + level);
+
     }
-    
-    public void rendahkanLevel(){
+
+    public void rendahkanLevel() {
         level--;
-        System.out.println("Meisn naik ke level " + level );
-        
+        System.out.println("Meisn turun ke level " + level);
+
     }
-    
-    public void naikkanLevel(){
+
+    public void naikkanLevel() {
         level++;
-        System.out.println("Mesin turun ke level " + level );
+        System.out.println("Mesin naik ke level " + level);
     }
-    
-    public void siap(){
+
+    public void siap() {
         System.out.println("=====================");
         System.out.println(" kondisi : " + kondisiMesin);
-        System.out.println("Merek : "+ merek);
+        System.out.println("Merek : " + merek);
         System.out.println("Harga : " + harga);
         System.out.println("=====================");
     }
@@ -59,4 +58,3 @@ level =0;
         mesin.stop();
     }
 }
-
