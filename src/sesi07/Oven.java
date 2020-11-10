@@ -14,20 +14,24 @@ public class Oven {
     int warningUmur;
     int harga;
     String merk;
+
+ 
+
+   
     
     
     public void setWarningUmur ( int usiaNya){
-        
+        warningUmur = usiaNya;
     }
     public void setKondisi(String kondisiNya){
-        
+        kondisi= kondisiNya;
     }
     public void setHarga ( int hargaNya){
-        
+        harga = hargaNya;
     }
     
     public void setMerk (String merkNya){
-        
+        merk = merkNya;
     }
     
     

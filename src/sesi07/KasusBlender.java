@@ -42,7 +42,7 @@ public class KasusBlender {
 
     public void siap() {
         System.out.println("=====================");
-        System.out.println(" kondisi : " + kondisiMesin);
+        System.out.println("Kondisi : " + kondisiMesin);
         System.out.println("Merek : " + merek);
         System.out.println("Harga : " + harga);
         System.out.println("=====================");

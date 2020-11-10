@@ -11,11 +11,16 @@ package sesi07;
  */
 public class Anak {
     
+    String nama = "";
+    int umur = 0;
+    
     public void setNama ( String namaNya){
-        
+        nama = namaNya;
+        //return nama;
     }
     public void setUmur ( int umurNya){
-        
+        umur = umurNya;
+       // return umur;
     }
     
 }
